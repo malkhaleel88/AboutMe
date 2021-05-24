@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    color: rgb(95, 45, 4);
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: burlywood;
+}
+nav ul li{
+    display: inline;
+    color: green;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+h2{
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(38, 133, 43);
+    background-color: rgb(201, 137, 54);
+    padding-left: 15px;
+}
+p{
+    font-size: 30px;
+    background-color: rgb(231, 200, 159);
+    font-weight: bold;
+    color: darkolivegreen;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer{
+    text-align: center;
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: burlywood;
+    margin-bottom: 0px;
+}
+
+
+
+
+
