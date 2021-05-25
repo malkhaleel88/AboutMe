@@ -66,8 +66,8 @@ if (MyFav === 'y') {
   alert('Wrong Answer' + '\n' + 'I am a Big Fans of Anime');
 }
 
-let i = 0;
-for (i; i < 4; i++) {
+
+for (let i = 0; i < 4; i++) {
   let UserNum = prompt('Guess The Correct Number ? (1 - 10)' + '\n' + 'You Have ' + (4-i) + ' Attempts');
   UserNum = Number(UserNum);
   if (UserNum === 6) {
@@ -79,19 +79,19 @@ for (i; i < 4; i++) {
   }else if (UserNum < 6){
     alert('Lower Number, Try Again');
   }
-}
-if(i === 4){
-  alert('No More Try, The Correct Number Is 6');
+  if(i === 3){
+    alert('No More Try, The Correct Number Is 6');
+  }
 }
 
 
-let a = 0;
+
 let FavColor = ['black', 'green', 'blue'];
-for (a; a < 6; a++) {
+for (let a = 0; a < 6; a++) {
   let Attempts = 6-a;
-  //   Attempts = Attempts.String(Attempts);
+  Attempts = Attempts.toString();
   let UserColor = prompt('Guess One Of My Favorite Colors ? ' + '\n' + 'You Have ' + Attempts + ' Attempts');
-  //   UserColor = UserColor.toLowerCase;
+  UserColor = UserColor.toLowerCase();
   if (UserColor === FavColor[0] || UserColor === FavColor[1] || UserColor === FavColor[2]){
     alert('Correct, This Is One Of Them');
     score++;
