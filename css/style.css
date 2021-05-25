@@ -13,7 +13,9 @@ nav ul li{
     margin-left: 20%;
     margin-top: 20px;
     margin-bottom: 20px;
-
+}
+main{
+    background-color: rgb(231, 200, 159);
 }
 h2{
     font-size: 35px;
@@ -22,14 +24,16 @@ h2{
     background-color: rgb(201, 137, 54);
     padding-left: 15px;
 }
-div ul li{
+ul li{
     font-size: 30px;
-    background-color: rgb(231, 200, 159);
     font-weight: bold;
     color: darkolivegreen;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+ol li{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkolivegreen;
 }
 
 footer{
@@ -38,7 +42,7 @@ footer{
     font-size: x-large;
     font-weight: bold;
     background-color: burlywood;
-    margin-bottom: 0px;
+
 }
 
 

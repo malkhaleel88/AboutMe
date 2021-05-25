@@ -1,19 +1,21 @@
 'use strict';
 
+let score = 0;
+
 let UserName = prompt('Hello' + '\n' + 'Enter your name please ?');
 console.log(UserName);
 
 
-let  MyCity = prompt('Do I Live In Amman ?' + '\n' + 'y / n');
+let MyCity = prompt('Do I Live In Amman ?' + '\n' + 'y / n');
 console.log(MyCity);
 MyCity = MyCity.toLowerCase();
 
 if (MyCity === 'y') {
 
-    alert('Correct Answer')
-    
+  alert('Correct Answer');
+  score++;
 } else {
-    alert('Wrong Answer' + '\n' + 'I Live In Amman' )
+  alert('Wrong Answer' + '\n' + 'I Live In Amman' );
 }
 
 let MyField = prompt('Am I a Mechanical Engineer ?' + '\n' + 'y / n');
@@ -22,10 +24,10 @@ MyField = MyField.toLowerCase();
 
 if (MyField === 'n') {
 
-    alert('Correct Answer' + '\n' + 'I am a Mechatronics Engineer')
-    
+  alert('Correct Answer' + '\n' + 'I am a Mechatronics Engineer');
+  score++;
 } else {
-    alert('Wrong Answer' + '\n' +  'I am a Mechatronics Engineer')
+  alert('Wrong Answer' + '\n' + 'I am a Mechatronics Engineer');
 }
 
 let MyStatus = prompt('Do I Still Single ?' + '\n' + 'y / n');
@@ -34,10 +36,10 @@ MyStatus = MyStatus.toLowerCase();
 
 if (MyStatus === 'n') {
 
-    alert('Correct Answer' + '\n' + 'I am Married')
-    
+  alert('Correct Answer' + '\n' + 'I am Married');
+  score++;
 } else {
-    alert('Wrong Answer' + '\n' + 'I am Married')
+  alert('Wrong Answer' + '\n' + 'I am Married');
 }
 
 let MyFamily = prompt('Do I Have Children ?' + '\n' + 'y / n');
@@ -46,10 +48,10 @@ MyFamily = MyFamily.toLowerCase();
 
 if (MyFamily === 'y') {
 
-    alert('Correct Answer' + '\n' + 'I Have One Daughter')
-    
+  alert('Correct Answer' + '\n' + 'I Have One Daughter');
+  score++;
 } else {
-    alert('Wrong Answer' + '\n' + 'I Have One Daughter')
+  alert('Wrong Answer' + '\n' + 'I Have One Daughter');
 }
 
 let MyFav = prompt('Am I Fans Of Anime ?' + '\n' + 'y / n');
@@ -58,13 +60,51 @@ MyFav = MyFav.toLowerCase();
 
 if (MyFav === 'y') {
 
-    alert('Correct Answer'  + '\n' + 'I am a Big Fans of Anime')
-    
+  alert('Correct Answer' + '\n' + 'I am a Big Fans of Anime');
+  score++;
 } else {
-    alert('Wrong Answer'  + '\n' + 'I am a Big Fans of Anime')
+  alert('Wrong Answer' + '\n' + 'I am a Big Fans of Anime');
 }
 
-alert('GREAT ' + UserName + '\n' + 'Welcome To My World');
+let i = 0;
+for (i; i < 4; i++) {
+  let UserNum = prompt('Guess The Correct Number ? (1 - 10)' + '\n' + 'You Have ' + (4-i) + ' Attempts');
+  UserNum = Number(UserNum);
+  if (UserNum === 6) {
+    alert('Correct, Move On');
+    score++;
+    break;
+  }else if (UserNum > 6){
+    alert('Higher Number, Try Again');
+  }else if (UserNum < 6){
+    alert('Lower Number, Try Again');
+  }
+}
+if(i === 4){
+  alert('No More Try, The Correct Number Is 6');
+}
+
+
+let a = 0;
+let FavColor = ['black', 'green', 'blue'];
+for (a; a < 6; a++) {
+  let Attempts = 6-a;
+  //   Attempts = Attempts.String(Attempts);
+  let UserColor = prompt('Guess One Of My Favorite Colors ? ' + '\n' + 'You Have ' + Attempts + ' Attempts');
+  //   UserColor = UserColor.toLowerCase;
+  if (UserColor === FavColor[0] || UserColor === FavColor[1] || UserColor === FavColor[2]){
+    alert('Correct, This Is One Of Them');
+    score++;
+    break;
+  } else {
+    alert('Wrong, Try Another');
+  }
+}
+
+alert('My Favorite Colors Are Black, Green And Blue');
+
+alert('Welcome ' + UserName +' your score is '+ score + '\n' + 'Enjoy your journey');
+
 
 
 
