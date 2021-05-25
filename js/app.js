@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 let UserName = prompt('Hello' + '\n' + 'Enter your name please ?');
 console.log(UserName);
