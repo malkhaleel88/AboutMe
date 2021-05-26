@@ -87,24 +87,21 @@ for (let i = 0; i < 4; i++) {
 
 
 let FavColor = ['black', 'green', 'blue'];
-for (let a = 0; a < 6; a++) {
+Try : for (let a = 0; a < 6; a++) {
   let Attempts = 6-a;
   Attempts = Attempts.toString();
   let UserColor = prompt('Guess One Of My Favorite Colors ? ' + '\n' + 'You Have ' + Attempts + ' Attempts');
   UserColor = UserColor.toLowerCase();
-  if (UserColor === FavColor[0] || UserColor === FavColor[1] || UserColor === FavColor[2]){
-    alert('Correct, This Is One Of Them');
-    score++;
-    break;
-  } else {
-    alert('Wrong, Try Another');
-  }
+    for (let z = 0; z < FavColor.length; z++){
+      if (UserColor === FavColor[z]){
+      alert('Correct, This Is One Of Them');
+      score++;
+      break Try;
+      } else {
+       alert('Wrong, Try Another');
+    }
 }
 
 alert('My Favorite Colors Are Black, Green And Blue');
 
 alert('Welcome ' + UserName +' your score is '+ score + '\n' + 'Enjoy your journey');
-
-
-
-
