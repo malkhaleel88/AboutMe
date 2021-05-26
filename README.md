@@ -6,3 +6,4 @@ two guessing questions with limited attempts.
 Visitor will see the score for right answers with welcoming message, then get access my information page.**
 
 ## Mohammad Amer AL-Khaleel
+note : functions added to each question in this code by asia mohammad. 
