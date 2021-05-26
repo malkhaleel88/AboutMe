@@ -75,9 +75,9 @@ for (let i = 0; i < 4; i++) {
     score++;
     break;
   }else if (UserNum > 6){
-    alert('Higher Number, Try Again');
+    alert('High, Try Lower');
   }else if (UserNum < 6){
-    alert('Lower Number, Try Again');
+    alert('Low, Try Higher');
   }
   if(i === 3){
     alert('No More Try, The Correct Number Is 6');
