@@ -7,3 +7,5 @@ Visitor will see the score for right answers with welcoming message, then get ac
 
 ## Mohammad Amer AL-Khaleel
 note : functions added to each question in this code by asia mohammad. 
+The Driver for this code is Asia Mohammad .
+The Navigator for this code is Mohammad AlKhaleel.
