@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    background-color: rgb(231, 200, 159);
+
 }
 h1{
     text-align: center;
@@ -11,14 +13,12 @@ h1{
 nav ul li{
     display: inline;
     color: green;
+    background-color: white;
     font-size: xx-large;
     font-weight: bold;
     margin-left: 20%;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-main{
-    background-color: rgb(231, 200, 159);
 }
 h2{
     font-size: 35px;
